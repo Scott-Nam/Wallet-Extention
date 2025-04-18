@@ -1,9 +1,7 @@
 # Creata Wallet Chrome Extension
-
 A Chrome extension wallet for the Creata blockchain ecosystem, built on Evmos technology.
 
 ## Features
-
 - Create or import wallet with mnemonic phrase
 - View wallet balance and transaction history
 - Send and receive CTA tokens
@@ -21,7 +19,6 @@ A Chrome extension wallet for the Creata blockchain ecosystem, built on Evmos te
 - Chrome browser
 
 ### Installation
-
 1. Clone this repository:
 git clone <repository-url>
 cd creata-wallet-extension
@@ -33,7 +30,6 @@ npm install
 npm run build
 
 ### Local Development
-
 1. Run the development server:
 npm run dev
 
@@ -43,7 +39,7 @@ npm run dev
    - Click "Load unpacked" and select the `dist` directory
 
 ## Project Structure
-creata-wallet-extension/
+creata-wallet-extension
 ├── public/                  # Static assets
 ├── src/
 │   ├── background/          # Background scripts
@@ -64,7 +60,6 @@ creata-wallet-extension/
 
 
 ## Network Configuration
-
 The extension connects to the following Creata blockchain services:
 
 - RPC: http://10.0.0.239:26657
@@ -73,14 +68,12 @@ The extension connects to the following Creata blockchain services:
 - gRPC (optional): 10.0.0.239:9090
 
 ## Building for Production
-
 To create a production build:
 npm run build:prod
 
 The output will be in the `dist` directory, ready to be packaged and deployed to the Chrome Web Store.
 
 ## Security Considerations
-
 - All sensitive data (private keys, mnemonics) are encrypted in storage
 - Session timeout for automatic locking
 - Permission model for dApp connections
