@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "Creata Wallet",
+  "version": "0.1.0",
+  "description": "Chrome extension wallet for Creata blockchain",
+  "action": {
+	"default_popup": "index.html",
+	"default_icon": {
+	  "16": "icons/icon16.png",
+	  "48": "icons/icon48.png",
+	  "128": "icons/icon128.png"
+	}
+  },
+  "icons": {
+	"16": "icons/icon16.png",
+	"48": "icons/icon48.png",
+	"128": "icons/icon128.png"
+  },
+  "permissions": [
+	"storage",
+	"tabs"
+  ],
+  "host_permissions": [
+	"http://10.0.0.239:26657/*",
+	"http://10.0.0.239:1317/*",
+	"ws://10.0.0.239:26657/*"
+  ],
+  "background": {
+	"service_worker": "background.js"
+  },
+  "content_scripts": [
+	{
+	  "matches": ["<all_urls>"],
+	  "js": ["contentscript.js"]
+	}
+  ]
+}
