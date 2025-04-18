@@ -40,22 +40,39 @@ npm run dev
 
 ## Project Structure
 creata-wallet-extension
+
 ├── public/                  # Static assets
+│ 
 ├── src/
+│ 
 │   ├── background/          # Background scripts
+│ 
 │   ├── contentscript/       # Content scripts
+│ 
 │   ├── popup/               # Popup UI
+│ 
 │   │   ├── components/      # React components
+│ 
 │   │   ├── App.js           # Main App component
+│ 
 │   │   └── index.js         # Entry point
+│ 
 │   ├── lib/                 # Shared libraries
+│ 
 │   │   ├── api/             # Blockchain API integration
+│ 
 │   │   ├── keyring/         # Key management
+│ 
 │   │   ├── storage/         # Secure storage
+│ 
 │   │   └── transactions/    # Transaction handling
+│ 
 │   ├── config/              # Configuration files
+│ 
 │   └── utils/               # Utility functions
+│ 
 ├── manifest.json            # Extension manifest
+│ 
 └── package.json             # Dependencies
 
 
