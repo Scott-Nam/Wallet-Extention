@@ -41,10 +41,10 @@ npm run dev
 ## Network Configuration
 The extension connects to the following Creata blockchain services:
 
-- RPC: http://10.0.0.239:26657
-- REST API: http://10.0.0.239:1317
-- WebSocket: ws://10.0.0.239:26657/websocket
-- gRPC (optional): 10.0.0.239:9090
+- RPC: http://Server's IP:26657
+- REST API: http://Server's IP:1317
+- WebSocket: ws://Server's IP/websocket
+- gRPC (optional): Server's IP:9090
 
 ## Building for Production
 To create a production build:
